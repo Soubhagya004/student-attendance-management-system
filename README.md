@@ -1,4 +1,4 @@
-# 🎓 Student Attendance Management System
+#  Student Attendance Management System
 
 This project is a web-based **Student Attendance Management System** built using Flask and MySQL.  
 It is designed to automate the traditional attendance process in educational institutions and provide a simple, efficient, and digital way to manage student attendance records.
@@ -21,7 +21,7 @@ The system ensures better accuracy, transparency, and easy access to data.
 
 
 
-## 🚀 Features
+##  Features
 
 - Secure login system for teachers/admin
 - Add, update, and manage student details
@@ -33,7 +33,7 @@ The system ensures better accuracy, transparency, and easy access to data.
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 The system follows a simple **client-server architecture**:
 
