@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>👨‍🏫 Teacher Dashboard</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+<div class="card p-3">
+    <h4>Welcome, {{ session['user'] }} 👋</h4>
+
+    <a href="/students" class="btn btn-primary mt-3">Add Students</a>
+    <a href="/view" class="btn btn-success mt-3">View Students</a>
+    <a href="/attendance" class="btn btn-info mt-3">Attendance Report</a>
+    <a href="/analytics" class="btn btn-warning mt-3">Analytics</a>
+</div>
+
+{% endblock %}

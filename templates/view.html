@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Student List</h2>
+
+<table class="table table-bordered table-striped">
+    <tr>
+    <th>Sl No</th>
+    <th>Name</th>
+    <th>USN</th>
+    <th>Department</th>
+    <th>Attendance</th>
+    <th>Actions</th>
+</tr>
+
+{% for s in students %}
+<tr>
+    <td>{{ loop.index }}</td>
+    <td>{{ s[1] }}</td>
+    <td>{{ s[2] }}</td>
+    <td>{{ s[3] }}</td>
+
+    <td>
+        <a class="btn btn-success btn-sm" href="/mark/{{ s[0] }}/Present">Present</a>
+        <a class="btn btn-danger btn-sm" href="/mark/{{ s[0] }}/Absent">Absent</a>
+    </td>
+
+    <td>
+        <a class="btn btn-warning btn-sm" href="/edit/{{ s[0] }}">Edit</a>
+        <a class="btn btn-danger btn-sm" href="/delete/{{ s[0] }}" onclick="return confirm('Delete?')">Delete</a>
+    </td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>🧑‍💼 Admin Dashboard</h2>
+
+<div class="card p-3">
+    <h4>Welcome Admin {{ session['user'] }} </h4>
+
+    <a href="/students" class="btn btn-primary mt-3">Manage Students</a>
+    <a href="/view" class="btn btn-success mt-3">View All Students</a>
+    <a href="/attendance" class="btn btn-info mt-3">Attendance Records</a>
+    <a href="/analytics" class="btn btn-warning mt-3">Analytics</a>
+</div>
+
+{% endblock %}
